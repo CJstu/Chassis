@@ -104,7 +104,7 @@ int main(void)
       Can_TxMessage(0,0x222,8,data);//发送想要发送的报文数据
       HAL_GPIO_TogglePin(TLED_GPIO_Port,TLED_Pin);
       //0:标准帧   0x222：帧ID  数据长度DLC：8  data：数据存放的数组
-      HAL_Delay(1000);    //发送要有延时
+      HAL_Delay(500);    //发送要有延时
   }
   /* USER CODE END 3 */
 }
